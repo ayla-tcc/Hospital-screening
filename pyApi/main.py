@@ -1,5 +1,6 @@
-from cgitb import reset
 from fastapi import FastAPI
+from fastapi.responses import RedirectResponse
+
 import asyncio
 import mkMd as md
 import triF
@@ -55,4 +56,4 @@ def home(nome, cpf, resp, genre, dor):
     if (stemp.arduino.isOpen() == True):
         stemp.arduino.close()
 
-    return "Feito"
+    return RedirectResponse("https://ayla-tcc.github.io/")

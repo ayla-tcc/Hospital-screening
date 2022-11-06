@@ -3,9 +3,9 @@ def tri(dor, temp, fc, oxi):
     def riscoD():
         riscoDor = 0
         if (dor == 'cabeca'):
-            riscoDor = 1
+            riscoDor = 0
         elif (dor == 'peito'):
-            riscoDor = 2
+            riscoDor = 0
         elif (dor == 'barriga'):
             riscoDor = 0
         print('RiscoDor = ', riscoDor)
